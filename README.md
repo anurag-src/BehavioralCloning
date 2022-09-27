@@ -2,18 +2,15 @@
 Implementation of BCO and BCO on the mountain car environment from OpenAI gym
 
 ### :key: Run the Project
-* Compile the C++ code normally
-* The first line of input is n, the number of rectangles, followed by n lines to accept the two x and y values for each rectangle, followed by a 0 or 1 based on whether the contour or measure is to be computed
-* The output file generated must be kept in the same folder as the visualisation notebook, which can be run after the C++ code is run to visualize the result.
-* The Test_Cases folder contains 6 test case folders in each there is a file with the contour points as output and an input file which has the test case input as well as the values from the input for both contour and measure.
-* The Documentation file has the analysis HTML pages.
+* Install the dependencies by creating and activating the environment_basic.yml
+* To run either of the files, it is simply python "filename".py
+* You will first be required to give a demonstration to train the agent (The goal is to get out of the valley the car starts in)
+* By default, the number of demos is 1, but the number of demos can be manually set by running "python mountain_car_bc.py --num_demos 5" for 5 demos for example
 
   
 ### :books: Libraries Used
-* matplotlib for visualisation
+* Pytorch, Numpy, Gym (from OpenAI), Pygame
 
 ### :star: Output
-* A contour or measure value will be outputted based on what computation you prompted.
-* An output file will be created if contour is chosen with the contour points coordinates.
-* The visualization notebook can be run to see the graph of the most recent test case.
+* The average, minimum and maximum of the 6 tests performed by the agent in the mountaincar environment
 
